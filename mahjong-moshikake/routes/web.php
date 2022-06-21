@@ -14,7 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home.index');
+});
+
+Route::get('/createNewTable',function(){
+    return view('main.createNewTable');
+});
+
+Route::get('/joinTable',function(){
+    return view('main.joinTable');
 });
 
 Auth::routes();
