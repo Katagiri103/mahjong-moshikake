@@ -7,10 +7,11 @@
         </style>
     </head>
     <body>
-        <form method="POST" action="create">
-            @csrf
-            <input type="text" name="name">
-            <input type="submit" value="卓を作成する">
-        </form>
+        <h1>{{$msg}}</h1>
+        <p>半荘終了後、あなたの持ち点数を入力して下さい</p>
+        <p>例）28200</p>
+        <p>例）-1800</p>
+        <form method="POST" action=""></form>
+        
     </body>
 </html>

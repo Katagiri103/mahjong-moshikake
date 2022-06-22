@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MainController;
 
 /*
 |--------------------------------------------------------------------------
@@ -24,6 +25,8 @@ Route::get('/createNewTable',function(){
 Route::get('/joinTable',function(){
     return view('main.joinTable');
 });
+
+Route::POST('create', 'App\Http\Controllers\MainController@post');
 
 Auth::routes();
 
