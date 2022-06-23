@@ -26,7 +26,9 @@ Route::get('/joinTable',function(){
     return view('main.joinTable');
 });
 
-Route::POST('create', 'App\Http\Controllers\MainController@post');
+Route::POST('create', 'App\Http\Controllers\MainController@create');
+
+Route::POST('join', 'App\Http\Controllers\MainController@join');
 
 Auth::routes();
 

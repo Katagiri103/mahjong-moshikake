@@ -9,7 +9,7 @@
     <body>
         <form method="POST" action="create">
             @csrf
-            <input type="text" name="name">
+            <input type="text" name="name" value="あなたの名前は？">
             <input type="submit" value="卓を作成する">
         </form>
     </body>
