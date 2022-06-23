@@ -8,14 +8,16 @@
     </head>
     <body>
         <h1>{{$msg}}</h1>
+        <p>卓ID：</p><br>  {{-- 卓IDを表示 --}}
+        <p>あなた：{{$name}}</p>  {{-- プレイヤー名を表示 --}}
         
         <form method="POST" action="finish">
             <p>半荘終了後、あなたの持ち点数を入力して下さい</p><br>
             <p>例）28200  例）-1800</p><br>
             
-            <input type="number" value="25000"><br>
+            <input type="number" value="25000" name="score"><br>
             <p>あなたの順位を入力してください</p><br>
-            <input type="number" value="1">
+            <input type="number" value="1" name="rank">
             <input type="submit" value="送信">
         </form>
         
